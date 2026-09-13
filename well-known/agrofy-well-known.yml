@@ -1,0 +1,185 @@
+generated: '2026-09-13'
+method: probed
+source: live GET of each /.well-known/ path on every Agrofy host known to this record
+note: No /.well-known/ document was served on any Agrofy host. Every path returned 404 (marketplace and
+  content hosts), 403 AccessDenied (developers.agrofy.com is a static S3/CloudFront site), 403 "Missing
+  Authentication Token" (apigateway-argentina.agrofy.com is an AWS API Gateway that answers that for any
+  unmapped route), or did not resolve (the agrofy.com apex has no A record; only www.agrofy.com does).
+  No WellKnown or SecurityTxt pointer is emitted, because this file records an absence, not a surface.
+hosts:
+- host: agrofy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    note: host did not resolve
+  - path: /.well-known/openid-configuration
+    status: 0
+    file: null
+    note: host did not resolve
+  - path: /.well-known/oauth-authorization-server
+    status: 0
+    file: null
+    note: host did not resolve
+  - path: /.well-known/api-catalog
+    status: 0
+    file: null
+    note: host did not resolve
+  - path: /.well-known/ai-plugin.json
+    status: 0
+    file: null
+    note: host did not resolve
+- host: www.agrofy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    content_type: application/xml
+- host: www.agrofy.com.ar
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    content_type: text/html
+- host: www.agrofy.com.br
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    content_type: text/html
+- host: developers.agrofy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    content_type: application/xml
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    content_type: application/xml
+- host: apigateway-argentina.agrofy.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    content_type: application/json
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+    content_type: application/json
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+    content_type: application/json
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+    content_type: application/json
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+    content_type: application/json
+- host: contenido.agrofy.com.ar
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    content_type: text/plain
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    content_type: text/html
+- host: news.agrofy.com.ar
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+    content_type: text/html
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+    content_type: text/html

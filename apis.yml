@@ -1,23 +1,106 @@
 aid: agrofy
 name: Agrofy
-description: 'Agrofy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Agrofy is a Latin American agribusiness technology company founded in
+  2015 in Rosario, Argentina, operating the region''s largest online marketplace for
+  agricultural inputs, machinery, farmland, vehicles and services. The company runs
+  three business units — Agrofy Market (the marketplace, live in Argentina and Brazil
+  with country storefronts across Bolivia, Chile, Colombia, Paraguay, Peru and Uruguay),
+  Agrofy News (an agricultural news publication) and Agrofy Pay (payments, credit and
+  financing for agribusiness transactions). Agrofy markets a partner integration program,
+  Agrofy Developers, for sellers who want to automate listings and lead management
+  inside the marketplace.'
 url: https://raw.githubusercontent.com/api-evangelist/agrofy/refs/heads/main/apis.yml
+image: https://www.agrofy.com/imagenes/logo-agrofy-sin-tag.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
+position: Producing
 created: '2026-09-13'
 modified: '2026-09-13'
 tags:
 - Company
-apis: []
+- Agriculture
+- Agribusiness
+- Agtech
+- Marketplace
+- E-Commerce
+- Payments
+- Latin America
+- Argentina
+- Brazil
+apis:
+- aid: agrofy:agrofy-marketplace-api
+  name: Agrofy Marketplace API
+  description: 'Agrofy Developers is the company''s marketed partner-integration program
+    for marketplace sellers — listing management, lead management and catalog synchronisation.
+    Agrofy publishes no machine-readable contract for it: the portal at developers.agrofy.com
+    is a static brochure that routes API documentation to eight per-country hosts
+    (developers.agrofy.com.ar/docs and siblings), none of which resolve in DNS, and
+    its own onboarding requires contacting an Agrofy advisor to be provisioned before
+    a reference guide is shared. The baseURL recorded here is the first-party AWS API
+    Gateway that the Argentine marketplace front end calls, observed in the markup
+    of https://www.agrofy.com.ar/ and confirmed live (GET /api/main-menu/list returned
+    HTTP 200 application/json unauthenticated on 2026-09-13); Agrofy''s own developer
+    material does not name a base URL, and no OpenAPI, Swagger, GraphQL SDL or AsyncAPI
+    was found on any Agrofy host.'
+  image: https://www.agrofy.com/imagenes/logo-agrofy-sin-tag.png
+  humanURL: https://developers.agrofy.com/
+  baseURL: https://apigateway-argentina.agrofy.com
+  tags:
+  - Marketplace
+  - Agriculture
+  - E-Commerce
+  properties: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/agrofy-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/agrofy
+  url: https://www.agrofy.com/
+- type: DeveloperPortal
+  url: https://developers.agrofy.com/
+- type: HelpCenter
+  url: https://contenido.agrofy.com.ar/es/
+- type: Support
+  url: https://www.agrofy.com.ar/contacts
+- type: Blog
+  url: https://news.agrofy.com.ar/
+- type: Login
+  url: https://www.agrofy.com.ar/auth
+- type: TermsOfService
+  url: https://www.agrofy.com.ar/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://www.agrofy.com.ar/politicas-de-privacidad
+- type: LLMsTxt
+  url: llms/agrofy-llms.txt
+- type: Plans
+  url: plans/agrofy-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/agrofy-rate-limits.yml
+x-enrichment:
+  date: '2026-09-13'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    Agrofy markets an integration program at developers.agrofy.com whose own four-step
+    onboarding is a contact form an advisor answers before any reference guide is
+    shared, and all eight of that portal's per-country "API docs" links fail before
+    HTTP — developers.agrofy.com.ar, .com.br and .com.bo are CNAMEs pointing at
+    NXDOMAIN targets under route53.prod-us-1.eks.agrofy.com, and developers.agrofy.cl,
+    .com.co, .com.pe, .com.py and .com.uy have no DNS record at all.
+  evidence:
+  - url: https://developers.agrofy.com/
+    status: 200
+  - url: https://developers.agrofy.com.ar/docs
+    status: 0
+  - url: https://apigateway-argentina.agrofy.com/openapi.json
+    status: 403
+  checked: '2026-09-13'

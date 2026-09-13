@@ -1,0 +1,30 @@
+generated: '2026-09-13'
+method: searched
+source: >-
+  registry.npmjs.org, pypi.org, rubygems.org, crates.io registry search for "agrofy"
+package_count: 0
+note: >-
+  No first-party Agrofy client library exists in any public package registry. npm
+  search for "agrofy" returned 0 results, PyPI returned 404 for the package name,
+  RubyGems returned an empty array and crates.io returned 0 crates. Agrofy publishes
+  no SDK links of its own — the developers.agrofy.com portal offers a contact form
+  rather than downloads — so there is nothing to derive from either. No SDKs or
+  Packages pointer is emitted, because this file records a checked absence.
+registries_checked:
+- registry: npm
+  url: https://registry.npmjs.org/-/v1/search?text=agrofy
+  status: 200
+  results: 0
+- registry: pypi
+  url: https://pypi.org/pypi/agrofy/json
+  status: 404
+  results: 0
+- registry: rubygems
+  url: https://rubygems.org/api/v1/search.json?query=agrofy
+  status: 200
+  results: 0
+- registry: crates.io
+  url: https://crates.io/api/v1/crates?q=agrofy
+  status: 200
+  results: 0
+packages: []

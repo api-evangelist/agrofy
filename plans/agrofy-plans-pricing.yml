@@ -1,0 +1,25 @@
+generated: '2026-09-13'
+method: searched
+source: https://contenido.agrofy.com.ar/es/articles/16647088-como-comprar-un-pack-agro
+plan_count: 0
+currency: null
+note: >-
+  Agrofy publishes no public pricing page and no API pricing of any kind. Seller
+  packages ("Pack Agro") and featured-listing products are real and are described in
+  the seller help centre, but the help article that walks through buying one states
+  only that "se mostrará una comparativa con los packs disponibles" once the seller is
+  signed in — no pack names, prices, currency, quotas or billing periods are published
+  to an anonymous visitor. The Agrofy Developers integration program publishes no
+  pricing either; its documented path to access is a contact form followed by an
+  advisor provisioning the account. Recorded as an honest zero rather than omitted.
+searched:
+- url: https://contenido.agrofy.com.ar/es/articles/16647088-como-comprar-un-pack-agro
+  status: 200
+  finding: purchase walkthrough only; pack comparison is shown after sign-in
+- url: https://developers.agrofy.com/
+  status: 200
+  finding: integration program brochure; no pricing, no tiers, contact-form onboarding
+- url: https://www.agrofy.com.ar/planes
+  status: 403
+  finding: no such page; the marketplace edge answered 403 to the probe
+plans: []

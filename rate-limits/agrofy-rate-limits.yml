@@ -1,0 +1,21 @@
+generated: '2026-09-13'
+method: searched
+source: https://developers.agrofy.com/
+limit_count: 0
+headers: []
+note: >-
+  No rate limits are published. Agrofy's only developer-facing page is the
+  developers.agrofy.com brochure, which carries no reference material at all — its
+  eight per-country "API docs" links (developers.agrofy.com.ar/docs and siblings) do
+  not resolve in DNS, so there is no document in which limits could be stated. The
+  first-party gateway apigateway-argentina.agrofy.com returned no RateLimit-*,
+  X-RateLimit-* or Retry-After header on the one route that answers unauthenticated
+  (GET /api/main-menu/list, HTTP 200). Recorded as an honest zero.
+observed:
+- url: https://apigateway-argentina.agrofy.com/api/main-menu/list
+  status: 200
+  rate_limit_headers: none returned
+- url: https://developers.agrofy.com/
+  status: 200
+  finding: no limits documented
+limits: []
