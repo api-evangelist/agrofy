@@ -1,0 +1,11 @@
+{
+  "repo": "agrofy",
+  "feeds": [
+    {
+      "source": "https://www.agrofy.com.ar/contacts",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-19T20:17:39Z"
+}
