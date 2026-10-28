@@ -64,5 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Agrofy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/agrofy
+Agrofy is a Latin American agribusiness technology company founded in 2015 in Rosario, Argentina, operating the region's largest online marketplace for agricultural inputs, machinery, farmland, vehicles and services. The company runs three business units — Agrofy Market (the marketplace, live in Argentina and Brazil with country storefronts across Bolivia, Chile, Colombia, Paraguay, Peru and Uruguay), Agrofy News (an agricultural news publication) and Agrofy Pay (payments, credit and financing for agribusiness transactions). Agrofy markets a partner integration program, Agrofy Developers, for sellers who want to automate listings and lead management inside the marketplace.
+
+**Areas:** Company · Agriculture · Agribusiness · AgTech · Marketplace · E-Commerce · Payments · Latin America · Argentina · Brazil
+
+## Agrofy on APIs.io
+
+Everything profiled for Agrofy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/agrofy/](https://apis.io/providers/agrofy/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Agrofy Marketplace API](https://apis.io/apis/agrofy/agrofy-marketplace-api/) — Agrofy Developers is the company's marketed partner-integration program for marketplace sellers — listing management, lead management and catalog…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Agrofy Domain Security](https://apis.io/security/agrofy/agrofy-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Agrofy Plans Pricing](https://apis.io/plans/agrofy/agrofy-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Agrofy Rate Limits](https://apis.io/rate-limits/agrofy/agrofy-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.agrofy.com/)
+- [Support](https://www.agrofy.com.ar/contacts)
+- [Blog](https://news.agrofy.com.ar/)
+- [Terms of service](https://www.agrofy.com.ar/terminos-y-condiciones)
+- [Privacy policy](https://www.agrofy.com.ar/politicas-de-privacidad)
+
+## API Evangelist rating
+
+**Kin Score 14.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.5** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agrofy/](https://apis.io/providers/agrofy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Agrofy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/agrofy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
